@@ -18,9 +18,56 @@ function create (args) {
         this.index = Object.create(null); 
         
         
+        
         this.process = function() {
             
+            
         }
+        
+        /*
+         *@method buildIndex() - generate an index object for the supplied text data.
+         *@param String - Document String. 
+         */ 
+        this.buildIndex = function(doc) {
+            /*
+             * Validate the data object
+             * and check if its a string
+             */
+            
+            if (!doc.data || typeof url != 'string') {
+                //emit an error event.
+                this.emit('error', Error('buildIndex() - Invalid data supplied'));
+                return; 
+            }
+            
+            /*
+             *validate that a document title was supplied.
+             *if not, set to a default title.
+             */
+            
+            var title = doc.title || '_untitled_document'; 
+            
+            /*
+             *remove special characters
+             */
+            
+            /*
+             *split on space.
+             */
+            
+            /*
+             *loop over the array and validate each word.
+             */
+            
+            
+        }
+        
+        
+        this.isValid = function() {
+            
+        }
+        
+        
         
     }
     
