@@ -20,8 +20,43 @@ function create (args) {
         
         
         this.process = function() {
+            var collection = null;
             
+            var self = this; 
             
+            fs.readdir(this.inputDir, function(err, files) {
+                if (err) { self.emit('error', err); }
+                else {
+                    
+                    files.forEach(function(val,index,arr) {
+                        
+                        //create the title and path variables and set the title to the
+                        //current file name. 
+                        var title = val;
+                        var path = self.inputDir + '/' + val;
+                        
+                        //declare a callback function for readfile. 
+                        var callback = function (err, data) {
+                            
+                            if (err) { self.emit('error', err); }
+                            else {
+                                //build an ojbect with the data and title
+                                var doc = {'title': title,
+                                            'data':data};
+                                            
+                                //call the index method.
+                                self.buildIndex(doc); 
+                            }
+                        }; 
+                        
+                        // Read the file data. 
+                        fs.readFile(path, 'utf8', callback); 
+                    
+                    }); 
+                    
+                }
+            });
+               
         }
         
         /*
@@ -33,12 +68,14 @@ function create (args) {
              * Validate the data object
              * and check if its a string
              */
-            
-            if (!doc.data || typeof url != 'string') {
+            console.log(doc); 
+            if (!doc.data || typeof doc.data != 'string') {
                 //emit an error event.
                 this.emit('error', Error('buildIndex() - Invalid data supplied'));
                 return; 
             }
+            
+            
             
             /*
              *validate that a document title was supplied.
