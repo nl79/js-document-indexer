@@ -154,7 +154,8 @@ function create (args) {
                      *current index.
                      */
                     
-                    self.index[word][title] = {pos: [index]};
+                    self.index[word] = {};
+                    self.index[word].title = {pos: [index]};
                     
                 }
                     
