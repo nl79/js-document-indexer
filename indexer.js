@@ -142,7 +142,7 @@ function create (args) {
                         if (self.index[word][title]) {
                             
                             self.index[word][title].pos.push(index);
-                            
+
                             return; 
                             
                         }  
@@ -153,10 +153,12 @@ function create (args) {
                      *create an object with a pos as key and an Array as value that will hold the
                      *current index.
                      */
-                    
-                    self.index[word] = {};
-                    self.index[word].title = {pos: [index]};
-                    
+                    var pair = {};
+
+                    pair[title] = {pos: new Array(index)};
+
+                    self.index[word] = pair;
+
                 }
                     
             });

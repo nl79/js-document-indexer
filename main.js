@@ -1,8 +1,8 @@
 var indexerFactory = require('./indexer.js'), 
-    args = {'inputDir': './cache',
+    args = {'inputDir': './test_data',
                 'outputDir': './index' };
                 
 var indexer = indexerFactory(args).on('finish', function(index) {
-    console.log(index); 
+    console.log('Finished');
 }).process(); 
                 
