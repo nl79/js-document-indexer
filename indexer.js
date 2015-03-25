@@ -1,3 +1,4 @@
+"use strict";
 var
     emitter = require('events').EventEmitter,
     util = require("util"), 
@@ -15,7 +16,8 @@ function create (args) {
         this.outputDir = args && args.outputdir || '/_default_output';
         
         //create an empty index object. 
-        this.index = Object.create(null);
+        //this.index = Object.create(null);
+        this.index = {};
         
         //processed document acount
         this.processed = 0;
@@ -132,20 +134,32 @@ function create (args) {
                     /*
                      *check if the word exists in the index.
                      */ 
-                    if (index[word]) {
-                        
+                    if (index.hasOwnProperty(word)) {
+
                         /*
                          *check if the current document title is in the index.
                          *if so, push the index into the pos array. 
                          */
-                        if (index[word][title]) {
-                            
+                        var record = index[word];
+
+                        if (record.hasOwnProperty(title)) {
+
                             index[word][title].pos.push(i);
 
                             return; 
                             
-                        }  else {
-                            index[word][title] = {pos: [i]};
+                        }  else if( !record.hasOwnProperty(title)){
+
+                            var key = index[word];
+
+                            delete index[word];
+
+                            key[title] = {pos: [i]};
+
+
+                            index[word] = key;
+
+                            //index[word][title] = {pos: [i]};
 
                             return;
                         }
