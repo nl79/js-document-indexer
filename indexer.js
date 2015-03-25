@@ -21,54 +21,51 @@ function create (args) {
         this.processed = 0;
         
         //collection count.
-        this.documentCount = 0; 
-        
+        this.documentCount = 0;
+
         this.process = function() {
             var collection = null;
-            
-            var self = this; 
-            
+
+            var self = this;
+
             fs.readdir(this.inputDir, function(err, files) {
                 if (err) { self.emit('error', err); }
                 else {
-                    
+
                     /*
                      *set the files length in the documentCount property.
                      */
-                    self.documentCount = files.length; 
-                    
-                    
+                    self.documentCount = files.length;
+
+
                     files.forEach(function(val,index,arr) {
-                        
+
                         //create the title and path variables and set the title to the
-                        //current file name. 
+                        //current file name.
                         var title = val;
                         var path = self.inputDir + '/' + val;
-                        
-                        //declare a callback function for readfile. 
+
+                        //declare a callback function for readfile.
                         var callback = function (err, data) {
-                            
+
                             if (err) { self.emit('error', err); }
                             else {
                                 //build an ojbect with the data and title
                                 var doc = {'title': title,
-                                            'data':data};
-                                            
+                                    'data':data};
+
                                 //call the index method.
                                 self.buildIndex(doc);
-                                
+
                             }
-                        }; 
-                        
-                        // Read the file data. 
+                        };
+
+                        // Read the file data.
                         fs.readFile(path, 'utf8', callback);
 
-                    
-                    }); 
-                    
+                    });
                 }
             });
-               
         }
         
         /*
@@ -113,12 +110,14 @@ function create (args) {
              */
             
             var parts = Indexer.prototype.stripMarkup(doc.data).replace(/\W/g, ' ').split(/\s+/); 
-            var self = this; 
+            //var self = this;
+
+            var index = this.index;
             
             /*
              *loop over the array and validate each word.
              */
-            parts.forEach(function(val, index, arr) {
+            parts.forEach(function(val, i, arr) {
                 
                 //clean the value by trimming off the empty spaces. 
                 var word = val.trim().toLowerCase();
@@ -133,19 +132,23 @@ function create (args) {
                     /*
                      *check if the word exists in the index.
                      */ 
-                    if (self.index[word]) {
+                    if (index[word]) {
                         
                         /*
                          *check if the current document title is in the index.
                          *if so, push the index into the pos array. 
                          */
-                        if (self.index[word][title]) {
+                        if (index[word][title]) {
                             
-                            self.index[word][title].pos.push(index);
+                            index[word][title].pos.push(i);
 
                             return; 
                             
-                        }  
+                        }  else {
+                            index[word][title] = {pos: [i]};
+
+                            return;
+                        }
                     }
                     
                     /*
@@ -155,15 +158,15 @@ function create (args) {
                      */
                     var pair = {};
 
-                    pair[title] = {pos: new Array(index)};
+                    pair[title] = {pos: [i]};
 
-                    self.index[word] = pair;
+                    index[word] = pair;
+
+                    return;
 
                 }
                     
             });
-            
-            
             //increment the processed count
             this.processed += 1; 
             

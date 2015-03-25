@@ -1,0 +1,50 @@
+ASSIGNMENT 02:   Add last logged in feature to project	100 pts
+Reference: Ullman text chapter 18 & project source code
+Problem:  Modify project to allow listing users who logged in within a time range like the last H hrs, M min and S sec.  
+1.	Table: Use phpMyAdmin to modify users table by adding a last_logged_in attribute which will contain the datetime a user last logged on.  Give a default value of 0000-00-00 00:00:00 since users initially have not logged in, only registered.
+2.	Existing scripts: Modify login.php page so that whenever a user logs in, login.php updates the last_logged_in column for that user to the current datetime. Check if register.php needs its SQL insert modified to handle last_logged_in.    
+3.	New Script: Create a new script who_logged_in.php which lets you ask which users logged in within the last H hours, M minutes and S seconds.  The H, M and S values are input via a sticky form in the script.  They must be integers (see below too).  
+4.	Imitation: The who_logged_in.php script should use the existing template structure with header.html and footer.html.
+5.	Imitation: The script should use the usual POST versus GET structure to determine whether it was triggered by a hyperlink (or URL) or by submission of its sticky form. 
+6.	Imitation and Modification: Handle who_logged_in.php inputs with regex validations and warnings like in register.php.  Use regex to limit hours to 1 to 4 digits minutes and seconds to 0-59.  The default can be 1 hour 0 minutes 0 seconds.  Specify in sticky form properly.    
+7.	Integration:  Integrate who_logged_in.php script into the system.  For example: in terms of navigation links, the hyperlink to the who_logged_in.php script should only appear in the navigation menu if the requestor is logged in and has administrator status in the users table.  This requires modifying the footer.html file which creates the dynamically generated menu.  Session variables are involved but only have to understood superficially at this point.
+8.	Who Can Execute the Script: The who_logged_in.php script should verify that whoever runs it is logged in and of administrator status and otherwise reject the request and return/redirect the requestor to the index.php page.  See footer.html to see how this can be accomplished using isset($_SESSION['user_id']) to test login status and $_SESSION['user_level'] == 1) to test admin status.  Check how the protected entry to the logout.php script works and imitate/extend that slightly.
+9.	Output:  The output for who_logged_in.php is a list of the database information for users who logged in within the last H hours, M minutes and S seconds, including their last_ logged in datetime. Ignore users whose last_logged_in value is still at its default value 0000-00-00 00:00:00.     
+10.	Where Condition: The selection of users determined by the time range input by who_logged_in.php requires an appropriate SQL select statement in who_logged_in.php.  The select command's where condition can use the MySQL function UNIX_TIMESAMP ( )  (with and without arguments!) to do the time calculations:  
+a.	UNIX_TIMESAMP ( ) with no argument returns the current epoch seconds.
+b.	For datetime attribute X, UNIX_TIMESAMP (`X` ) (tick marks `   -- not single quotes ') converts X to its UNIX epoch seconds value.  
+These SQL functions let us define a time range condition for selecting users.  Once the selected users are retrieved, the PHP script receives these results (stored say in a variable $r) and can use a while loop to return a list of them to the browser.  
+11.	Returning and Accessing Expression Values:  OPTIONAL [25 pts extra]: 
+a.	For each user returned determine how long (in hours, minutes, and seconds) it has been since that user last logged in (like 2 hours 3 minutes and 4 seconds).  This can be calculated based on the difference between the current UNIX_TIMESTAMP and the epoch value of the last_logged_in attribute.  
+b.	Generally, if N table attributes (indexed 0 … N-1) are retrieved using an asterisk * in a select statement, and the * is followed by an arithmetic formula or expression based on table attributes, then the value of the expression (related to (10) above) would be the Nth value returned and is accessible in the PHP retrieval loop as $r[N], assuming the retrieved array was stored in $r (like in (10) above).  
+c.	Suppose this value is 7384 seconds (for one of the users since their last log in.)  Then the PHP % operator and the floor function can be used to change this to hours, minutes and seconds.  For example, floor( 7384/3600 ) gives 2 hours.  7384 % 3600 (the remainder of 7384 mod 3600) gives 124 seconds.  This can then be similarly converted to 2 minutes and 4 seconds.   
+
+An Overall Plan of Attack for this Modification
+1.   Update users table with new last_logged_in attribute and modify login.php to "update" this attribute.
+2.	footer.html –  Add new hyperlink to navigation menu that requires admin and logged-in status  to see.
+3.	You can use register.php as a sample code model to define a new script last_logged_in.php, by imitating but modifying the code for register.php (register.php itself remains the same.)  Some of old code has to be replaced or modified and some new code has to be added:
+a.	Add access protection code like at the beginning of the logout.php script but also requiring admin status as well as login status (tested via session variables).
+b.	Replace the register.php data validations with validations/logic for Hours, Minutes and Seconds.
+c.	Replace the register.php form input fields with fields for Hours, Minutes and Seconds instead.
+d.	If Hours && Minutes && Seconds are valid. Don't handle 0's as Boolean false which would break the logic conditions (add new Boolean variables – works slightly differently than in register.php!) Define/execute SQL: replace register.php's SQL code section with new code:
+i.	Convert Hours, Minutes, Seconds to seconds for use in a condition for the select statement.
+ii.	Define/execute a new select statement like: 
+Select * from users where TIME-CONDITION-HOLDS
+The condition can use the UNIX_TIMESTAMP() and UNIX_TIMESTAMP(`last_logged_in`) functions together (with the seconds as calculated in (i)) to retrieve only users from the requested time range.
+iii.	Assuming retrieved results are saved in $t and a variable $r holds retrieved rows in a standard loop; the following outputs the users who logged in within the timeframe:
+while ( $r = mysqli_fetch_array ($t) )
+{ 	Output user_id, fullname, last_logged_in  inside HTML table tags.
+              Naturally start/stop table with <table> & </table> outside/after while loop.
+}
+iv.	The only else from register.php that should survive in this section is the else for validation errors reported if the input data failed data validation.
+4.	Bonus: for each retrieved user in step 3, calculate the length of time since the user's last login:
+a.	Formulate a "difference in seconds" expression to get the length of time in seconds since the user's last login datetime; then define the SQL:
+SELECT * ,  expression    FROM users WHERE TIME-CONDITION-HOLDS
+If * retrieves (say)  9 attributes from users and $r is like in (3iii) then the value of the expression is available as $r[ 9  ].  The first 9 attributes 0..8 could be accessed by their "names" or as $r[0] to $r[8].  Thus $r[9] corresponds to the expression's returned value.
+b.	Convert $r[9] (say) - for each row retrieved - to hours, minutes and seconds using division operator, floor function, and % operator.  See numerical example under (11).
+
+Additional Remarks
+1.	Restricted access to the who_logged_in script:  Be sure a user cannot access the who_logged_in script unless they are logged in and an administrator.  This means not only that (1) they cannot see it in the menu unless logged in/admin, but also that (2) even if a user directly requests the URL for the script (for example, by entering  https://web.njit.edu/~yourUCID/302/ch18/html/who_logged_in.php  directly in the browser) the script must just either tell the user they don't have access privileges to run the script, or it  can just redirect the user (by means of a PHP header command) back to the index page.  
+2.	Empty response: If no students are retrieved for an input time period the script should explicitly indicate there are none. 
+3.	Empty H, M, S Values:  The H, M, S inputs should be required, somehow or other.  For example, notice that empty strings would not pass the validation tests for register.php, and so empty inputs should not pass the validation for the H, M, and S inputs for the who_logged_in.php script either.   Alternatively, default 0 values could be provided as initial values for the sticky form, but this is a little delicate to pull-off without undermining the sticky character of the form.
+

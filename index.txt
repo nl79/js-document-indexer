@@ -1,0 +1,2036 @@
+0
+	file1.txt - [253,261,263,661,955,1208,1219,1449]
+1
+	file1.txt - [43,245,259,399,663,801,1261,1290]
+1
+	file1.txt - [43,245,259,399,663,801,1261,1290]
+
+	file2.txt - [133,821]
+2
+	file1.txt - [86,627,768,788,817,1305,1372]
+2
+	file1.txt - [86,627,768,788,817,1305,1372]
+
+	file2.txt - [174]
+3
+	file1.txt - [125,629,835,1134,1393]
+3
+	file1.txt - [125,629,835,1134,1393]
+
+	file2.txt - [258]
+4
+	file1.txt - [174,247,632,791,1126]
+4
+	file1.txt - [174,247,632,791,1126]
+
+	file2.txt - [341]
+5
+	file1.txt - [192]
+5
+	file1.txt - [192]
+
+	file2.txt - [618]
+6
+	file1.txt - [222]
+6
+	file1.txt - [222]
+
+	file2.txt - [832]
+7
+	file1.txt - [270]
+7
+	file1.txt - [270]
+
+	file2.txt - [862]
+8
+	file1.txt - [340,1209,1222]
+8
+	file1.txt - [340,1209,1222]
+
+	file2.txt - [334,930]
+9
+	file1.txt - [420,1183,1203,1206,1225,1236]
+10
+	file1.txt - [472,695,724]
+11
+	file1.txt - [594,1258]
+18
+	file1.txt - [15]
+18
+	file1.txt - [15]
+
+	file2.txt - [29,194,990]
+25
+	file1.txt - [601]
+59
+	file1.txt - [254]
+63
+	file2.txt - [251]
+100
+	file1.txt - [9]
+100
+	file1.txt - [9]
+
+	file2.txt - [7]
+124
+	file1.txt - [779]
+302
+	file1.txt - [1326]
+302
+	file1.txt - [1326]
+
+	file2.txt - [143,171]
+573
+	file2.txt - [196]
+3600
+	file1.txt - [766,771,777]
+7384
+	file1.txt - [731,765,770,775]
+assignment
+	file1.txt - [0]
+assignment
+	file1.txt - [0]
+
+	file2.txt - [0]
+02
+	file1.txt - [1]
+add
+	file1.txt - [2,820,887,966]
+add
+	file1.txt - [2,820,887,966]
+
+	file2.txt - [58]
+last
+	file1.txt - [3,35,63,144,441,623,740,1144,1165]
+last
+	file1.txt - [3,35,63,144,441,623,740,1144,1165]
+
+	file2.txt - [471,637]
+logged
+	file1.txt - [4,27,64,82,140,304,357,437,452,624,830,1073,1280,1299]
+logged
+	file1.txt - [4,27,64,82,140,304,357,437,452,624,830,1073,1280,1299]
+
+	file2.txt - [855,857]
+in
+	file1.txt - [5,28,83,99,141,164,236,266,281,296,305,310,358,438,453,494,575,612,625,669,706,720,723,742,831,974,999,1037,1054,1063,1074,1109,1132,1150,1159,1191,1281,1295,1300,1332]
+in
+	file1.txt - [5,28,83,99,141,164,236,266,281,296,305,310,358,438,453,494,575,612,625,669,706,720,723,742,831,974,999,1037,1054,1063,1074,1109,1132,1150,1159,1191,1281,1295,1300,1332]
+
+	file2.txt - [37,124,158,192,214,262,299,359,378,386,438,474,522,551,584,612,660,856,911,979,988]
+feature
+	file1.txt - [6]
+to
+	file1.txt - [7,22,47,109,122,204,241,244,246,252,288,334,373,381,392,400,409,513,542,585,591,694,754,757,787,813,823,833,846,873,883,995,1039,1153,1220,1227,1242,1264,1349,1368,1467]
+to
+	file1.txt - [7,22,47,109,122,204,241,244,246,252,288,334,373,381,392,400,409,513,542,585,591,694,754,757,787,813,823,833,846,873,883,995,1039,1153,1220,1227,1242,1264,1349,1368,1467]
+
+	file2.txt - [60,65,126,206,232,393,442,446,453,482,505,525,528,534,572,580,599,630,642,656,664,674,699,717,747,757,759,789,822,829,886,972,975]
+project
+	file1.txt - [8,16,21]
+project
+	file1.txt - [8,16,21]
+
+	file2.txt - [15,36,62,100,152,440,448,461,476,888]
+pts
+	file1.txt - [10,602]
+pts
+	file1.txt - [10,602]
+
+	file2.txt - [8]
+reference
+	file1.txt - [11]
+reference
+	file1.txt - [11]
+
+	file2.txt - [537,998]
+ullman
+	file1.txt - [12]
+ullman
+	file1.txt - [12]
+
+	file2.txt - [13,31,146]
+text
+	file1.txt - [13]
+text
+	file1.txt - [13]
+
+	file2.txt - [33,44,198]
+chapter
+	file1.txt - [14]
+chapter
+	file1.txt - [14]
+
+	file2.txt - [28,193,989]
+source
+	file1.txt - [17]
+code
+	file1.txt - [18,844,858,871,881,890,985,989]
+code
+	file1.txt - [18,844,858,871,881,890,985,989]
+
+	file2.txt - [135,182,441,548,565,938]
+problem
+	file1.txt - [19]
+modify
+	file1.txt - [20,48,89,810]
+modify
+	file1.txt - [20,48,89,810]
+
+	file2.txt - [56]
+allow
+	file1.txt - [23]
+allow
+	file1.txt - [23]
+
+	file2.txt - [823]
+listing
+	file1.txt - [24]
+users
+	file1.txt - [25,49,78,139,312,435,456,478,560,564,737,803,1016,1042,1071,1175,1186]
+users
+	file1.txt - [25,49,78,139,312,435,456,478,560,564,737,803,1016,1042,1071,1175,1186]
+
+	file2.txt - [188,750,813]
+who
+	file1.txt - [26,341,436,1072]
+within
+	file1.txt - [29,142,439,1075]
+a
+	file1.txt - [30,53,61,67,96,129,161,211,428,518,554,576,582,587,604,670,842,848,886,1000,1009,1057,1064,1146,1148,1270,1308,1363,1464]
+a
+	file1.txt - [30,53,61,67,96,129,161,211,428,518,554,576,582,587,604,670,842,848,886,1000,1009,1057,1064,1146,1148,1270,1308,1363,1464]
+
+	file2.txt - [90,104,159,200,322,467,483,520,658,661,769,784,884,906,956]
+time
+	file1.txt - [31,482,516,555,1018,1046,1139,1158,1177,1383]
+range
+	file1.txt - [32,483,556,1047]
+like
+	file1.txt - [33,235,626,722,891,1013,1190]
+like
+	file1.txt - [33,235,626,722,891,1013,1190]
+
+	file2.txt - [96,202,481,553,706,714]
+the
+	file1.txt - [34,59,103,110,143,152,165,176,182,194,198,255,277,286,289,297,301,311,317,323,344,346,366,371,374,406,410,422,431,440,475,481,497,505,515,524,562,567,592,640,643,647,651,674,688,691,699,707,715,736,744,748,772,857,866,893,896,916,931,963,1003,1021,1025,1033,1044,1067,1070,1076,1100,1113,1120,1136,1141,1155,1162,1170,1194,1197,1204,1228,1265,1274,1296,1312,1315,1333,1335,1341,1351,1358,1369,1385,1399,1419,1432,1435,1442,1458,1472,1476]
+the
+	file1.txt - [34,59,103,110,143,152,165,176,182,194,198,255,277,286,289,297,301,311,317,323,344,346,366,371,374,406,410,422,431,440,475,481,497,505,515,524,562,567,592,640,643,647,651,674,688,691,699,707,715,736,744,748,772,857,866,893,896,916,931,963,1003,1021,1025,1033,1044,1067,1070,1076,1100,1113,1120,1136,1141,1155,1162,1170,1194,1197,1204,1228,1265,1274,1296,1312,1315,1333,1335,1341,1351,1358,1369,1385,1399,1419,1432,1435,1442,1458,1472,1476]
+
+	file2.txt - [12,40,43,52,147,181,208,215,218,221,238,241,260,276,282,289,294,297,300,304,314,318,326,330,343,351,367,376,381,394,398,422,425,431,434,439,454,470,475,499,502,529,536,545,559,564,570,585,591,594,601,613,620,627,632,634,644,650,654,687,695,739,754,761,774,778,794,843,846,875,899,920,927,937,941,976,982]
+h
+	file1.txt - [36,145,153,442,1395,1400,1436]
+hrs
+	file1.txt - [37]
+m
+	file1.txt - [38,147,154,444,1396,1401,1437]
+min
+	file1.txt - [39]
+and
+	file1.txt - [40,149,155,189,224,233,250,306,359,363,368,396,415,446,510,579,596,615,631,646,673,703,747,760,790,809,829,878,927,942,1027,1056,1187,1245,1252,1282,1425,1438]
+and
+	file1.txt - [40,149,155,189,224,233,250,306,359,363,368,396,415,446,510,579,596,615,631,646,673,703,747,760,790,809,829,878,927,942,1027,1056,1187,1245,1252,1282,1425,1438]
+
+	file2.txt - [10,22,49,57,73,86,211,271,427,575,609,636,639,737,751,804,871,896,946,963,965,991]
+s
+	file1.txt - [41,150,156,447,500,956,983,1143,1164,1230,1397,1402,1439]
+s
+	file1.txt - [41,150,156,447,500,956,983,1143,1164,1230,1397,1402,1439]
+
+	file2.txt - [32,71,101,346]
+sec
+	file1.txt - [42]
+table
+	file1.txt - [44,50,313,658,685,804,1088,1093]
+table
+	file1.txt - [44,50,313,658,685,804,1088,1093]
+
+	file2.txt - [19,190,239]
+use
+	file1.txt - [45,181,197,239,504,581,838,998,1024]
+use
+	file1.txt - [45,181,197,239,504,581,838,998,1024]
+
+	file2.txt - [87,281,533,602,619,668,680,694,712,745,799]
+phpmyadmin
+	file1.txt - [46]
+phpmyadmin
+	file1.txt - [46]
+
+	file2.txt - [203,746]
+by
+	file1.txt - [51,210,216,480,485,677,853,1213,1319,1360]
+by
+	file1.txt - [51,210,216,480,485,677,853,1213,1319,1360]
+
+	file2.txt - [256,313,491,810,836,867]
+adding
+	file1.txt - [52]
+last_logged_in
+	file1.txt - [54,104,124,458,652,807,851,1029,1085]
+attribute
+	file1.txt - [55,531,653,808,816]
+attribute
+	file1.txt - [55,531,653,808,816]
+
+	file2.txt - [223]
+which
+	file1.txt - [56,134,138,321,960]
+which
+	file1.txt - [56,134,138,321,960]
+
+	file2.txt - [459]
+will
+	file1.txt - [57]
+will
+	file1.txt - [57]
+
+	file2.txt - [55,80,112,236,273,516,549,864,904,951]
+contain
+	file1.txt - [58]
+datetime
+	file1.txt - [60,112,454,530,1167]
+user
+	file1.txt - [62,97,108,607,622,1131,1142,1163,1271,1309,1342,1359]
+user
+	file1.txt - [62,97,108,607,622,1131,1142,1163,1271,1309,1342,1359]
+
+	file2.txt - [655,819]
+on
+	file1.txt - [65,639,684]
+on
+	file1.txt - [65,639,684]
+
+	file2.txt - [128,155,723,851,892,898,913,919]
+give
+	file1.txt - [66]
+give
+	file1.txt - [66]
+
+	file2.txt - [905,954]
+default
+	file1.txt - [68,256,464,1448]
+default
+	file1.txt - [68,256,464,1448]
+
+	file2.txt - [212,257,368]
+value
+	file1.txt - [69,459,465,547,649,689,701,729,1195,1232]
+of
+	file1.txt - [70,218,283,360,430,477,589,650,690,735,774,796,869,895,1138,1157,1196,1362,1475]
+of
+	file1.txt - [70,218,283,360,430,477,589,650,690,735,774,796,869,895,1138,1157,1196,1362,1475]
+
+	file2.txt - [30,42,69,74,107,118,180,197,296,421,513,593,603,615,771,793,807,845,874,908,915,936,959,986]
+0000
+	file1.txt - [71,466]
+00
+	file1.txt - [72,73,74,75,76,467,468,469,470,471]
+since
+	file1.txt - [77,620,738,1140,1161]
+since
+	file1.txt - [77,620,738,1140,1161]
+
+	file2.txt - [371,624]
+initially
+	file1.txt - [79]
+have
+	file1.txt - [80,333,1346]
+have
+	file1.txt - [80,333,1346]
+
+	file2.txt - [579,641,788,790]
+not
+	file1.txt - [81,537,1287,1417,1430]
+not
+	file1.txt - [81,537,1287,1417,1430]
+
+	file2.txt - [113,227,254,861,952]
+only
+	file1.txt - [84,294,332,1041,1101,1288]
+only
+	file1.txt - [84,294,332,1041,1101,1288]
+
+	file2.txt - [114,578,831,953]
+registered
+	file1.txt - [85]
+existing
+	file1.txt - [87,183]
+existing
+	file1.txt - [87,183]
+
+	file2.txt - [130,724]
+scripts
+	file1.txt - [88]
+scripts
+	file1.txt - [88]
+
+	file2.txt - [449]
+login
+	file1.txt - [90,100,394,811,908,1145,1166]
+login
+	file1.txt - [90,100,394,811,908,1145,1166]
+
+	file2.txt - [415,423,838]
+php
+	file1.txt - [91,101,116,133,178,228,238,274,291,348,376,412,426,487,496,568,708,745,812,840,852,861,863,898,918,933,976,982,1105,1330,1364,1424,1444]
+php
+	file1.txt - [91,101,116,133,178,228,238,274,291,348,376,412,426,487,496,568,708,745,812,840,852,861,863,898,918,933,976,982,1105,1330,1364,1424,1444]
+
+	file2.txt - [2,47,64,70,119,243,264,285,345,347,486,495,555,608,617,622,948,960]
+page
+	file1.txt - [92,377,1371]
+so
+	file1.txt - [93,1426]
+so
+	file1.txt - [93,1426]
+
+	file2.txt - [473,667,922]
+that
+	file1.txt - [94,107,352,418,621,826,1106,1289,1304,1413]
+that
+	file1.txt - [94,107,352,418,621,826,1106,1289,1304,1413]
+
+	file2.txt - [379,541,731,826,889]
+whenever
+	file1.txt - [95]
+logs
+	file1.txt - [98]
+updates
+	file1.txt - [102]
+column
+	file1.txt - [105]
+column
+	file1.txt - [105]
+
+	file2.txt - [756]
+for
+	file1.txt - [106,279,424,434,529,558,605,733,762,798,859,924,939,997,1002,1115,1128,1238,1314,1317,1380,1410,1422,1434,1441,1457]
+for
+	file1.txt - [106,279,424,434,529,558,605,733,762,798,859,924,939,997,1002,1115,1128,1238,1314,1317,1380,1410,1422,1434,1441,1457]
+
+	file2.txt - [92,266,336,408,587,733,940,999]
+current
+	file1.txt - [111,525,644]
+check
+	file1.txt - [113,404]
+check
+	file1.txt - [113,404]
+
+	file2.txt - [730,840]
+if
+	file1.txt - [114,300,656,946,1119,1180,1307,1375]
+if
+	file1.txt - [114,300,656,946,1119,1180,1307,1375]
+
+	file2.txt - [315,678,782]
+register
+	file1.txt - [115,237,839,860,862,917,932,975,981,1104,1423]
+register
+	file1.txt - [115,237,839,860,862,917,932,975,981,1104,1423]
+
+	file2.txt - [242,554,616,621,947]
+needs
+	file1.txt - [117]
+its
+	file1.txt - [118,219,463,543]
+its
+	file1.txt - [118,219,463,543]
+
+	file2.txt - [16,23,83,108,187,869]
+sql
+	file1.txt - [119,491,549,979,984,1171]
+sql
+	file1.txt - [119,491,549,979,984,1171]
+
+	file2.txt - [801]
+insert
+	file1.txt - [120]
+modified
+	file1.txt - [121,877]
+handle
+	file1.txt - [123,226,954]
+new
+	file1.txt - [126,130,806,821,849,880,967,988,1010]
+script
+	file1.txt - [127,131,166,179,195,275,292,345,349,413,569,850,899,1267,1276,1316,1336,1352,1386,1445]
+script
+	file1.txt - [127,131,166,179,195,275,292,345,349,413,569,850,899,1267,1276,1316,1336,1352,1386,1445]
+
+	file2.txt - [26,244,532,623]
+create
+	file1.txt - [128]
+create
+	file1.txt - [128]
+
+	file2.txt - [186,675,702]
+who_logged_in
+	file1.txt - [132,177,227,273,290,347,425,486,495,1266,1275,1329,1443]
+lets
+	file1.txt - [135]
+you
+	file1.txt - [136,836]
+you
+	file1.txt - [136,836]
+
+	file2.txt - [122,176,183,412,460,679,683,691,701,710,727,742,765,787,796,853,955,971]
+ask
+	file1.txt - [137]
+hours
+	file1.txt - [146,243,443,613,628,758,769,925,940,947,992,1243]
+minutes
+	file1.txt - [148,249,262,445,614,630,759,789,926,941,948,993,1244]
+seconds
+	file1.txt - [151,251,264,448,527,546,616,633,732,761,780,792,928,943,949,994,996,1034,1151,1160,1246]
+values
+	file1.txt - [157,599,1398,1450,1456]
+values
+	file1.txt - [157,599,1398,1450,1456]
+
+	file2.txt - [213]
+are
+	file1.txt - [158,329,565,664,950,1052,1279,1378,1391]
+are
+	file1.txt - [158,329,565,664,950,1052,1279,1378,1391]
+
+	file2.txt - [224,373,413,430,827,854]
+input
+	file1.txt - [159,484,935,1121,1382]
+via
+	file1.txt - [160,911]
+via
+	file1.txt - [160,911]
+
+	file2.txt - [883]
+sticky
+	file1.txt - [162,220,267,1459,1473]
+form
+	file1.txt - [163,221,268,934,1460,1477]
+they
+	file1.txt - [167,1278,1291,1343]
+they
+	file1.txt - [167,1278,1291,1343]
+
+	file2.txt - [719]
+must
+	file1.txt - [168,1337]
+must
+	file1.txt - [168,1337]
+
+	file2.txt - [184]
+be
+	file1.txt - [169,258,386,636,698,752,784,874,884,1211,1268,1405,1452]
+be
+	file1.txt - [169,258,386,636,698,752,784,874,884,1211,1268,1405,1452]
+
+	file2.txt - [204,275,404,488,506,517,550,597,995]
+integers
+	file1.txt - [170]
+see
+	file1.txt - [171,378,382,834,1254,1293]
+below
+	file1.txt - [172]
+too
+	file1.txt - [173]
+imitation
+	file1.txt - [175,193,223]
+should
+	file1.txt - [180,196,293,350,1107,1387,1404,1429]
+should
+	file1.txt - [180,196,293,350,1107,1387,1404,1429]
+
+	file2.txt - [403,451]
+template
+	file1.txt - [184]
+structure
+	file1.txt - [185,203]
+with
+	file1.txt - [186,230,509,520,805,921,937,987,1032,1094]
+with
+	file1.txt - [186,230,509,520,805,921,937,987,1032,1094]
+
+	file2.txt - [339,375,704]
+header
+	file1.txt - [187,1365]
+header
+	file1.txt - [187,1365]
+
+	file2.txt - [942]
+html
+	file1.txt - [188,191,319,380,819,1087,1328]
+html
+	file1.txt - [188,191,319,380,819,1087,1328]
+
+	file2.txt - [943,945]
+footer
+	file1.txt - [190,318,379,818]
+footer
+	file1.txt - [190,318,379,818]
+
+	file2.txt - [944]
+usual
+	file1.txt - [199]
+post
+	file1.txt - [200]
+versus
+	file1.txt - [201]
+get
+	file1.txt - [202,1154]
+get
+	file1.txt - [202,1154]
+
+	file2.txt - [686]
+determine
+	file1.txt - [205,609]
+whether
+	file1.txt - [206]
+whether
+	file1.txt - [206]
+
+	file2.txt - [356,852]
+it
+	file1.txt - [207,355,617,1294,1354]
+it
+	file1.txt - [207,355,617,1294,1354]
+
+	file2.txt - [88,154,450,515,557]
+was
+	file1.txt - [208,718]
+was
+	file1.txt - [208,718]
+
+	file2.txt - [163]
+triggered
+	file1.txt - [209]
+hyperlink
+	file1.txt - [212,287,822]
+hyperlink
+	file1.txt - [212,287,822]
+
+	file2.txt - [521,741]
+or
+	file1.txt - [213,215,681,876,1216,1353,1408]
+or
+	file1.txt - [213,215,681,876,1216,1353,1408]
+
+	file2.txt - [253,363,860,881]
+url
+	file1.txt - [214,1313]
+url
+	file1.txt - [214,1313]
+
+	file2.txt - [455,509]
+submission
+	file1.txt - [217]
+modification
+	file1.txt - [225,800]
+inputs
+	file1.txt - [229,1403,1428,1440]
+regex
+	file1.txt - [231,240]
+validations
+	file1.txt - [232,920,922]
+warnings
+	file1.txt - [234]
+limit
+	file1.txt - [242]
+digits
+	file1.txt - [248]
+can
+	file1.txt - [257,342,385,503,580,635,751,782,837,1023,1355]
+can
+	file1.txt - [257,342,385,503,580,635,751,782,837,1023,1355]
+
+	file2.txt - [177,487,568,692,728,743,924,994]
+hour
+	file1.txt - [260]
+specify
+	file1.txt - [265]
+properly
+	file1.txt - [269]
+integration
+	file1.txt - [271]
+integrate
+	file1.txt - [272]
+into
+	file1.txt - [276]
+into
+	file1.txt - [276]
+
+	file2.txt - [773]
+system
+	file1.txt - [278]
+system
+	file1.txt - [278]
+
+	file2.txt - [5,357,377,416,424,571,902,966,977]
+example
+	file1.txt - [280,763,1256,1318,1411]
+terms
+	file1.txt - [282]
+navigation
+	file1.txt - [284,298,824]
+navigation
+	file1.txt - [284,298,824]
+
+	file2.txt - [848]
+links
+	file1.txt - [285]
+appear
+	file1.txt - [295]
+menu
+	file1.txt - [299,326,825,1297]
+menu
+	file1.txt - [299,326,825,1297]
+
+	file2.txt - [849]
+requestor
+	file1.txt - [302,372]
+is
+	file1.txt - [303,356,427,460,675,704,730,1112,1189,1199,1463]
+is
+	file1.txt - [303,356,427,460,675,704,730,1112,1189,1199,1463]
+
+	file2.txt - [358,369,436,462,498,626]
+has
+	file1.txt - [307,618,872,882]
+has
+	file1.txt - [307,618,872,882]
+
+	file2.txt - [504,984]
+administrator
+	file1.txt - [308,361,1284]
+administrator
+	file1.txt - [308,361,1284]
+
+	file2.txt - [399,409,417,859]
+status
+	file1.txt - [309,362,395,403,832,904,909]
+this
+	file1.txt - [314,338,384,634,728,756,781,799,815,1110,1285,1462]
+this
+	file1.txt - [314,338,384,634,728,756,781,799,815,1110,1285,1462]
+
+	file2.txt - [35,61,111,387,625,916,950]
+requires
+	file1.txt - [315,488,827]
+requires
+	file1.txt - [315,488,827]
+
+	file2.txt - [103,653]
+modifying
+	file1.txt - [316,856]
+file
+	file1.txt - [320]
+file
+	file1.txt - [320]
+
+	file2.txt - [21,348,388,484,547,561,596,770,786,803]
+creates
+	file1.txt - [322]
+dynamically
+	file1.txt - [324]
+generated
+	file1.txt - [325]
+generated
+	file1.txt - [325]
+
+	file2.txt - [489]
+session
+	file1.txt - [327,912]
+variables
+	file1.txt - [328,913,969]
+involved
+	file1.txt - [330]
+but
+	file1.txt - [331,855,900,1302,1461]
+but
+	file1.txt - [331,855,900,1302,1461]
+
+	file2.txt - [120,781,968]
+understood
+	file1.txt - [335]
+superficially
+	file1.txt - [336]
+at
+	file1.txt - [337,462,892]
+at
+	file1.txt - [337,462,892]
+
+	file2.txt - [137,165,648,815,878]
+point
+	file1.txt - [339]
+point
+	file1.txt - [339]
+
+	file2.txt - [452,526]
+execute
+	file1.txt - [343,978,1008]
+verify
+	file1.txt - [351]
+whoever
+	file1.txt - [353]
+runs
+	file1.txt - [354]
+otherwise
+	file1.txt - [364]
+reject
+	file1.txt - [365]
+request
+	file1.txt - [367]
+return
+	file1.txt - [369,586]
+redirect
+	file1.txt - [370,1357]
+index
+	file1.txt - [375,1370]
+how
+	file1.txt - [383,405,610]
+how
+	file1.txt - [383,405,610]
+
+	file2.txt - [125,514]
+accomplished
+	file1.txt - [387]
+using
+	file1.txt - [388,666,1247]
+using
+	file1.txt - [388,666,1247]
+
+	file2.txt - [63,199,240,837]
+isset
+	file1.txt - [389]
+_session
+	file1.txt - [390,397]
+user_id
+	file1.txt - [391,1083]
+test
+	file1.txt - [393,401]
+test
+	file1.txt - [393,401]
+
+	file2.txt - [11]
+user_level
+	file1.txt - [398]
+user_level
+	file1.txt - [398]
+
+	file2.txt - [820]
+admin
+	file1.txt - [402,828,903,1301]
+protected
+	file1.txt - [407]
+entry
+	file1.txt - [408]
+entry
+	file1.txt - [408]
+
+	file2.txt - [149]
+logout
+	file1.txt - [411,897]
+logout
+	file1.txt - [411,897]
+
+	file2.txt - [841]
+works
+	file1.txt - [414,970]
+imitate
+	file1.txt - [416]
+extend
+	file1.txt - [417]
+slightly
+	file1.txt - [419,971]
+output
+	file1.txt - [421,423,1082]
+list
+	file1.txt - [429,588]
+database
+	file1.txt - [432]
+database
+	file1.txt - [432]
+
+	file2.txt - [18,189,268,340,530,633,775]
+information
+	file1.txt - [433]
+including
+	file1.txt - [449]
+their
+	file1.txt - [450,739,1214]
+last_
+	file1.txt - [451]
+ignore
+	file1.txt - [455]
+ignore
+	file1.txt - [455]
+
+	file2.txt - [590]
+whose
+	file1.txt - [457]
+still
+	file1.txt - [461]
+where
+	file1.txt - [473,501,1017,1176]
+where
+	file1.txt - [473,501,1017,1176]
+
+	file2.txt - [496]
+condition
+	file1.txt - [474,502,557,1001,1019,1022,1178]
+selection
+	file1.txt - [476]
+determined
+	file1.txt - [479]
+an
+	file1.txt - [489,667,678,793,1283,1381]
+an
+	file1.txt - [489,667,678,793,1283,1381]
+
+	file2.txt - [507,523,800]
+appropriate
+	file1.txt - [490]
+select
+	file1.txt - [492,498,671,1004,1011,1014,1172]
+statement
+	file1.txt - [493,672,1005,1012]
+statement
+	file1.txt - [493,672,1005,1012]
+
+	file2.txt - [317]
+command
+	file1.txt - [499,1366]
+command
+	file1.txt - [499,1366]
+
+	file2.txt - [106,302]
+mysql
+	file1.txt - [506]
+mysql
+	file1.txt - [506]
+
+	file2.txt - [291,428,527,611]
+function
+	file1.txt - [507,750,1251]
+function
+	file1.txt - [507,750,1251]
+
+	file2.txt - [320,328,384]
+unix_timesamp
+	file1.txt - [508,519,533]
+without
+	file1.txt - [511,1470]
+arguments
+	file1.txt - [512]
+arguments
+	file1.txt - [512]
+
+	file2.txt - [298]
+do
+	file1.txt - [514]
+do
+	file1.txt - [514]
+
+	file2.txt - [444]
+calculations
+	file1.txt - [517]
+no
+	file1.txt - [521,1376]
+argument
+	file1.txt - [522]
+returns
+	file1.txt - [523]
+epoch
+	file1.txt - [526,545,648]
+b
+	file1.txt - [528,654,914,1233]
+x
+	file1.txt - [532,534,541]
+tick
+	file1.txt - [535]
+marks
+	file1.txt - [536]
+single
+	file1.txt - [538]
+quotes
+	file1.txt - [539]
+converts
+	file1.txt - [540]
+unix
+	file1.txt - [544]
+these
+	file1.txt - [548,571]
+functions
+	file1.txt - [550,1030]
+let
+	file1.txt - [551]
+let
+	file1.txt - [551]
+
+	file2.txt - [700]
+us
+	file1.txt - [552]
+define
+	file1.txt - [553,847,977,1007,1169]
+define
+	file1.txt - [553,847,977,1007,1169]
+
+	file2.txt - [259,342]
+selecting
+	file1.txt - [559]
+once
+	file1.txt - [561]
+selected
+	file1.txt - [563]
+retrieved
+	file1.txt - [566,665,716,1050,1061,1130,1241,1379]
+receives
+	file1.txt - [570]
+results
+	file1.txt - [572,1051]
+stored
+	file1.txt - [573,719]
+stored
+	file1.txt - [573,719]
+
+	file2.txt - [463]
+say
+	file1.txt - [574,1182,1237]
+variable
+	file1.txt - [577,1058]
+r
+	file1.txt - [578,712,721,1059,1079,1188,1202,1218,1221,1224,1235]
+while
+	file1.txt - [583,1078,1097]
+while
+	file1.txt - [583,1078,1097]
+
+	file2.txt - [229]
+loop
+	file1.txt - [584,710,1066,1098]
+them
+	file1.txt - [590]
+browser
+	file1.txt - [593,1334]
+browser
+	file1.txt - [593,1334]
+
+	file2.txt - [395,895]
+returning
+	file1.txt - [595]
+accessing
+	file1.txt - [597]
+expression
+	file1.txt - [598,682,692,1152,1173,1198,1229]
+optional
+	file1.txt - [600]
+extra
+	file1.txt - [603]
+each
+	file1.txt - [606,1129,1239]
+returned
+	file1.txt - [608,702,1231]
+long
+	file1.txt - [611]
+been
+	file1.txt - [619]
+calculated
+	file1.txt - [637,1036]
+based
+	file1.txt - [638,683]
+based
+	file1.txt - [638,683]
+
+	file2.txt - [3]
+difference
+	file1.txt - [641,1149]
+between
+	file1.txt - [642]
+unix_timestamp
+	file1.txt - [645,1026,1028]
+generally
+	file1.txt - [655]
+n
+	file1.txt - [657,662,713]
+attributes
+	file1.txt - [659,686,1184,1207]
+attributes
+	file1.txt - [659,686,1184,1207]
+
+	file2.txt - [219]
+indexed
+	file1.txt - [660]
+asterisk
+	file1.txt - [668]
+followed
+	file1.txt - [676]
+arithmetic
+	file1.txt - [679]
+formula
+	file1.txt - [680]
+then
+	file1.txt - [687,743,783,1168,1193]
+then
+	file1.txt - [687,743,783,1168,1193]
+
+	file2.txt - [729,839]
+related
+	file1.txt - [693]
+above
+	file1.txt - [696,725]
+would
+	file1.txt - [697,961,1416]
+nth
+	file1.txt - [700]
+accessible
+	file1.txt - [705]
+retrieval
+	file1.txt - [709]
+as
+	file1.txt - [711,841,905,907,957,1035,1201,1217,1454]
+as
+	file1.txt - [711,841,905,907,957,1035,1201,1217,1454]
+
+	file2.txt - [89,191,226,469,519,978,997]
+assuming
+	file1.txt - [714,1049]
+array
+	file1.txt - [717]
+c
+	file1.txt - [726,929]
+suppose
+	file1.txt - [727]
+one
+	file1.txt - [734]
+one
+	file1.txt - [734]
+
+	file2.txt - [539,817]
+log
+	file1.txt - [741]
+operator
+	file1.txt - [746,1249,1253]
+operator
+	file1.txt - [746,1249,1253]
+
+	file2.txt - [501]
+floor
+	file1.txt - [749,764,1250]
+used
+	file1.txt - [753]
+used
+	file1.txt - [753]
+
+	file2.txt - [335,518,996]
+change
+	file1.txt - [755]
+change
+	file1.txt - [755]
+
+	file2.txt - [581]
+gives
+	file1.txt - [767,778]
+gives
+	file1.txt - [767,778]
+
+	file2.txt - [121]
+remainder
+	file1.txt - [773]
+mod
+	file1.txt - [776]
+similarly
+	file1.txt - [785]
+converted
+	file1.txt - [786]
+overall
+	file1.txt - [794]
+plan
+	file1.txt - [795]
+attack
+	file1.txt - [797]
+update
+	file1.txt - [802,814]
+sample
+	file1.txt - [843]
+model
+	file1.txt - [845]
+imitating
+	file1.txt - [854]
+itself
+	file1.txt - [864]
+remains
+	file1.txt - [865]
+same
+	file1.txt - [867]
+same
+	file1.txt - [867]
+
+	file2.txt - [277]
+some
+	file1.txt - [868,879]
+some
+	file1.txt - [868,879]
+
+	file2.txt - [582,676]
+old
+	file1.txt - [870]
+replaced
+	file1.txt - [875]
+added
+	file1.txt - [885]
+access
+	file1.txt - [888,1263,1273,1347]
+access
+	file1.txt - [888,1263,1273,1347]
+
+	file2.txt - [891]
+protection
+	file1.txt - [889]
+beginning
+	file1.txt - [894]
+beginning
+	file1.txt - [894]
+
+	file2.txt - [614]
+also
+	file1.txt - [901,1303]
+also
+	file1.txt - [901,1303]
+
+	file2.txt - [693,744,767,798,969]
+requiring
+	file1.txt - [902]
+well
+	file1.txt - [906]
+tested
+	file1.txt - [910]
+replace
+	file1.txt - [915,930,980]
+data
+	file1.txt - [919,1122,1124]
+data
+	file1.txt - [919,1122,1124]
+
+	file2.txt - [209,338]
+logic
+	file1.txt - [923,964]
+fields
+	file1.txt - [936,938]
+instead
+	file1.txt - [944]
+d
+	file1.txt - [945]
+valid
+	file1.txt - [951]
+don
+	file1.txt - [952,1344]
+don
+	file1.txt - [952,1344]
+
+	file2.txt - [720]
+t
+	file1.txt - [953,1055,1081,1345]
+t
+	file1.txt - [953,1055,1081,1345]
+
+	file2.txt - [685,721]
+boolean
+	file1.txt - [958,968]
+false
+	file1.txt - [959]
+false
+	file1.txt - [959]
+
+	file2.txt - [362,370]
+break
+	file1.txt - [962]
+conditions
+	file1.txt - [965]
+differently
+	file1.txt - [972]
+than
+	file1.txt - [973]
+than
+	file1.txt - [973]
+
+	file2.txt - [288,397]
+section
+	file1.txt - [986,1111]
+i
+	file1.txt - [990,1038]
+i
+	file1.txt - [990,1038]
+
+	file2.txt - [863,890,903]
+convert
+	file1.txt - [991,1234]
+ii
+	file1.txt - [1006]
+from
+	file1.txt - [1015,1043,1103,1174,1185]
+from
+	file1.txt - [1015,1043,1103,1174,1185]
+
+	file2.txt - [418,926]
+holds
+	file1.txt - [1020,1060,1179]
+together
+	file1.txt - [1031]
+retrieve
+	file1.txt - [1040]
+requested
+	file1.txt - [1045]
+iii
+	file1.txt - [1048]
+saved
+	file1.txt - [1053]
+rows
+	file1.txt - [1062]
+standard
+	file1.txt - [1065]
+following
+	file1.txt - [1068]
+outputs
+	file1.txt - [1069]
+timeframe
+	file1.txt - [1077]
+mysqli_fetch_array
+	file1.txt - [1080]
+fullname
+	file1.txt - [1084]
+inside
+	file1.txt - [1086]
+tags
+	file1.txt - [1089]
+naturally
+	file1.txt - [1090]
+start
+	file1.txt - [1091]
+start
+	file1.txt - [1091]
+
+	file2.txt - [932]
+stop
+	file1.txt - [1092]
+outside
+	file1.txt - [1095]
+after
+	file1.txt - [1096]
+iv
+	file1.txt - [1099]
+else
+	file1.txt - [1102,1114]
+else
+	file1.txt - [1102,1114]
+
+	file2.txt - [316]
+survive
+	file1.txt - [1108]
+validation
+	file1.txt - [1116,1125,1420,1433]
+validation
+	file1.txt - [1116,1125,1420,1433]
+
+	file2.txt - [645]
+errors
+	file1.txt - [1117]
+reported
+	file1.txt - [1118]
+failed
+	file1.txt - [1123]
+bonus
+	file1.txt - [1127]
+step
+	file1.txt - [1133]
+calculate
+	file1.txt - [1135]
+length
+	file1.txt - [1137,1156]
+formulate
+	file1.txt - [1147]
+retrieves
+	file1.txt - [1181]
+3iii
+	file1.txt - [1192]
+available
+	file1.txt - [1200]
+first
+	file1.txt - [1205]
+first
+	file1.txt - [1205]
+
+	file2.txt - [185,635,939]
+could
+	file1.txt - [1210,1451]
+could
+	file1.txt - [1210,1451]
+
+	file2.txt - [766,797]
+accessed
+	file1.txt - [1212]
+names
+	file1.txt - [1215]
+names
+	file1.txt - [1215]
+
+	file2.txt - [638,713]
+thus
+	file1.txt - [1223]
+corresponds
+	file1.txt - [1226]
+row
+	file1.txt - [1240]
+division
+	file1.txt - [1248]
+numerical
+	file1.txt - [1255]
+under
+	file1.txt - [1257]
+under
+	file1.txt - [1257]
+
+	file2.txt - [350,458]
+additional
+	file1.txt - [1259]
+remarks
+	file1.txt - [1260]
+restricted
+	file1.txt - [1262]
+restricted
+	file1.txt - [1262]
+
+	file2.txt - [828]
+sure
+	file1.txt - [1269]
+cannot
+	file1.txt - [1272,1292]
+unless
+	file1.txt - [1277,1298]
+means
+	file1.txt - [1286,1361]
+even
+	file1.txt - [1306]
+directly
+	file1.txt - [1310,1331]
+directly
+	file1.txt - [1310,1331]
+
+	file2.txt - [392,776]
+requests
+	file1.txt - [1311]
+entering
+	file1.txt - [1320]
+https
+	file1.txt - [1321]
+https
+	file1.txt - [1321]
+
+	file2.txt - [166]
+web
+	file1.txt - [1322]
+web
+	file1.txt - [1322]
+
+	file2.txt - [139,167]
+njit
+	file1.txt - [1323]
+njit
+	file1.txt - [1323]
+
+	file2.txt - [140,168]
+edu
+	file1.txt - [1324]
+edu
+	file1.txt - [1324]
+
+	file2.txt - [141,169]
+yourucid
+	file1.txt - [1325]
+yourucid
+	file1.txt - [1325]
+
+	file2.txt - [716]
+ch18
+	file1.txt - [1327]
+ch18
+	file1.txt - [1327]
+
+	file2.txt - [148,173]
+just
+	file1.txt - [1338,1356]
+just
+	file1.txt - [1338,1356]
+
+	file2.txt - [752]
+either
+	file1.txt - [1339,1446]
+either
+	file1.txt - [1339,1446]
+
+	file2.txt - [877]
+tell
+	file1.txt - [1340]
+privileges
+	file1.txt - [1348]
+run
+	file1.txt - [1350]
+run
+	file1.txt - [1350]
+
+	file2.txt - [178]
+back
+	file1.txt - [1367]
+empty
+	file1.txt - [1373,1394,1414,1427]
+response
+	file1.txt - [1374]
+students
+	file1.txt - [1377]
+period
+	file1.txt - [1384]
+explicitly
+	file1.txt - [1388]
+indicate
+	file1.txt - [1389]
+there
+	file1.txt - [1390]
+none
+	file1.txt - [1392]
+required
+	file1.txt - [1406]
+somehow
+	file1.txt - [1407]
+other
+	file1.txt - [1409]
+other
+	file1.txt - [1409]
+
+	file2.txt - [447]
+notice
+	file1.txt - [1412]
+strings
+	file1.txt - [1415]
+pass
+	file1.txt - [1418,1431]
+tests
+	file1.txt - [1421]
+alternatively
+	file1.txt - [1447]
+provided
+	file1.txt - [1453]
+initial
+	file1.txt - [1455]
+little
+	file1.txt - [1465]
+delicate
+	file1.txt - [1466]
+pull
+	file1.txt - [1468]
+off
+	file1.txt - [1469]
+undermining
+	file1.txt - [1471]
+character
+	file1.txt - [1474]
+character
+	file1.txt - [1474]
+
+	file2.txt - [331,472]
+
+	file1.txt - [1478]
+
+	file1.txt - [1478]
+
+	file2.txt - [1002]
+01
+	file2.txt - [1]
+logon
+	file2.txt - [4,14,151]
+installation
+	file2.txt - [6,876]
+install
+	file2.txt - [9,153]
+associated
+	file2.txt - [17]
+configuration
+	file2.txt - [20,546,560,586,595]
+db
+	file2.txt - [24]
+connection
+	file2.txt - [25,531]
+objective
+	file2.txt - [27]
+discusses
+	file2.txt - [34]
+total
+	file2.txt - [38]
+detail
+	file2.txt - [39,987]
+rest
+	file2.txt - [41,592]
+explains
+	file2.txt - [45]
+basic
+	file2.txt - [46,628]
+syntax
+	file2.txt - [48,964,1000]
+techniques
+	file2.txt - [50,962]
+during
+	file2.txt - [51]
+semester
+	file2.txt - [53]
+we
+	file2.txt - [54,79,235,280,372,567,589]
+features
+	file2.txt - [59,102,825]
+deepen
+	file2.txt - [66]
+your
+	file2.txt - [67,116,156,267,278,405,414,419,669,734,872,879,887,934]
+understanding
+	file2.txt - [68,117,873,935,958]
+capabilities
+	file2.txt - [72]
+server
+	file2.txt - [75]
+side
+	file2.txt - [76]
+scripting
+	file2.txt - [77]
+concepts
+	file2.txt - [78]
+closely
+	file2.txt - [81]
+examine
+	file2.txt - [82]
+implementation
+	file2.txt - [84,109]
+way
+	file2.txt - [85,629]
+platform
+	file2.txt - [91]
+exploring
+	file2.txt - [93]
+software
+	file2.txt - [94]
+technologies
+	file2.txt - [95]
+jquery
+	file2.txt - [97]
+extending
+	file2.txt - [98]
+any
+	file2.txt - [99,179]
+thorough
+	file2.txt - [105]
+accomplishing
+	file2.txt - [110]
+strengthen
+	file2.txt - [115]
+experience
+	file2.txt - [123]
+build
+	file2.txt - [127]
+pre
+	file2.txt - [129]
+systems
+	file2.txt - [131]
+tasks
+	file2.txt - [132]
+unzip
+	file2.txt - [134]
+directory
+	file2.txt - [136,161,353,457,540]
+http
+	file2.txt - [138,246,464,510]
+mchugh
+	file2.txt - [142,170]
+notes
+	file2.txt - [144,172]
+d01
+	file2.txt - [145]
+contains
+	file2.txt - [150]
+website
+	file2.txt - [157]
+suitable
+	file2.txt - [160]
+mine
+	file2.txt - [162]
+installed
+	file2.txt - [164]
+before
+	file2.txt - [175,306]
+p
+	file2.txt - [195]
+tool
+	file2.txt - [201]
+careful
+	file2.txt - [205]
+follow
+	file2.txt - [207,643]
+types
+	file2.txt - [210]
+book
+	file2.txt - [216,983]
+all
+	file2.txt - [217,914]
+except
+	file2.txt - [220]
+active
+	file2.txt - [222,230,755]
+declared
+	file2.txt - [225]
+null
+	file2.txt - [228,233,252,255,758]
+defaults
+	file2.txt - [231]
+later
+	file2.txt - [234]
+populate
+	file2.txt - [237,631]
+note
+	file2.txt - [245,293]
+dba
+	file2.txt - [247]
+stackexchange
+	file2.txt - [248]
+com
+	file2.txt - [249,697,709]
+questions
+	file2.txt - [250]
+constants
+	file2.txt - [261,349,429,583]
+mysqli_connect
+	file2.txt - [263,301,307]
+appropriately
+	file2.txt - [265]
+account
+	file2.txt - [269]
+db_use
+	file2.txt - [270]
+db_name
+	file2.txt - [272]
+probably
+	file2.txt - [274]
+ucid
+	file2.txt - [279]
+newer
+	file2.txt - [283]
+mysqli
+	file2.txt - [284]
+commands
+	file2.txt - [286,292]
+rather
+	file2.txt - [287,396]
+former
+	file2.txt - [290]
+order
+	file2.txt - [295]
+asides
+	file2.txt - [303]
+symbol
+	file2.txt - [305]
+suppresses
+	file2.txt - [308]
+error
+	file2.txt - [309,324,383,390]
+messages
+	file2.txt - [310,391,410]
+handled
+	file2.txt - [311]
+here
+	file2.txt - [312]
+trigger_error
+	file2.txt - [319]
+calls
+	file2.txt - [321]
+custom
+	file2.txt - [323,382]
+handler
+	file2.txt - [325]
+mysqli_set_charset
+	file2.txt - [327]
+specifies
+	file2.txt - [329]
+encoding
+	file2.txt - [332]
+utf
+	file2.txt - [333]
+exchanging
+	file2.txt - [337]
+config_inc
+	file2.txt - [344]
+includes
+	file2.txt - [352,605]
+live
+	file2.txt - [354]
+indicates
+	file2.txt - [355]
+development
+	file2.txt - [360]
+state
+	file2.txt - [361,365]
+production
+	file2.txt - [364]
+true
+	file2.txt - [366]
+experimenting
+	file2.txt - [374]
+case
+	file2.txt - [380]
+defined
+	file2.txt - [385]
+sends
+	file2.txt - [389]
+email
+	file2.txt - [400,402,406,524,663,671,689,736]
+address
+	file2.txt - [401,407,672]
+remember
+	file2.txt - [411]
+copy
+	file2.txt - [420]
+base_url
+	file2.txt - [426,435,493,503]
+most
+	file2.txt - [432,576]
+important
+	file2.txt - [433]
+concatenated
+	file2.txt - [437]
+conveniently
+	file2.txt - [443]
+redirects
+	file2.txt - [445]
+root
+	file2.txt - [456]
+etc
+	file2.txt - [465,511]
+include
+	file2.txt - [466]
+slash
+	file2.txt - [468]
+correct
+	file2.txt - [477]
+redirection
+	file2.txt - [478]
+relocation
+	file2.txt - [479]
+addresses
+	file2.txt - [480,705]
+target
+	file2.txt - [485,494]
+merely
+	file2.txt - [490]
+writing
+	file2.txt - [492]
+dot
+	file2.txt - [497]
+concatenation
+	file2.txt - [500]
+absolute
+	file2.txt - [508]
+because
+	file2.txt - [512,544]
+move
+	file2.txt - [535,569]
+up
+	file2.txt - [538]
+makes
+	file2.txt - [542]
+sense
+	file2.txt - [543]
+files
+	file2.txt - [552,949]
+when
+	file2.txt - [556]
+executes
+	file2.txt - [558]
+helps
+	file2.txt - [562]
+keep
+	file2.txt - [563]
+portable
+	file2.txt - [566]
+another
+	file2.txt - [573]
+site
+	file2.txt - [574,698,732]
+likely
+	file2.txt - [577]
+now
+	file2.txt - [588]
+able
+	file2.txt - [598]
+understand
+	file2.txt - [600]
+require
+	file2.txt - [604,610]
+config
+	file2.txt - [606]
+inc
+	file2.txt - [607]
+passwords
+	file2.txt - [640,795]
+rules
+	file2.txt - [646]
+enforced
+	file2.txt - [647]
+registration
+	file2.txt - [649,651,666,735,762,779,835]
+process
+	file2.txt - [652,764,780]
+click
+	file2.txt - [657,738,753]
+link
+	file2.txt - [659,885]
+received
+	file2.txt - [662]
+complete
+	file2.txt - [665]
+own
+	file2.txt - [670]
+es
+	file2.txt - [673]
+entries
+	file2.txt - [677,703,772,808]
+fake
+	file2.txt - [681]
+emails
+	file2.txt - [682]
+won
+	file2.txt - [684]
+activation
+	file2.txt - [688,763]
+alternatives
+	file2.txt - [690]
+mailinator
+	file2.txt - [696,708,725]
+harry1
+	file2.txt - [707,715]
+might
+	file2.txt - [711]
+ensure
+	file2.txt - [718]
+land
+	file2.txt - [722]
+mailboxes
+	file2.txt - [726]
+authorization
+	file2.txt - [740]
+manually
+	file2.txt - [748]
+enter
+	file2.txt - [749]
+bypass
+	file2.txt - [760]
+import
+	file2.txt - [768,802]
+bypassing
+	file2.txt - [777]
+read
+	file2.txt - [783]
+csv
+	file2.txt - [785]
+hashed
+	file2.txt - [791]
+versions
+	file2.txt - [792]
+generate
+	file2.txt - [805]
+lots
+	file2.txt - [806,985]
+easily
+	file2.txt - [809]
+editing
+	file2.txt - [811]
+administrative
+	file2.txt - [812,818]
+make
+	file2.txt - [814,973]
+least
+	file2.txt - [816]
+testing
+	file2.txt - [824]
+administrators
+	file2.txt - [830]
+confirm
+	file2.txt - [833]
+successful
+	file2.txt - [834]
+observe
+	file2.txt - [842]
+behavior
+	file2.txt - [844]
+dynamic
+	file2.txt - [847]
+depending
+	file2.txt - [850]
+out
+	file2.txt - [858]
+evaluate
+	file2.txt - [865]
+work
+	file2.txt - [866]
+checking
+	file2.txt - [868]
+correctness
+	file2.txt - [870]
+desk
+	file2.txt - [880]
+possibly
+	file2.txt - [882]
+my
+	file2.txt - [893]
+laptop
+	file2.txt - [894]
+display
+	file2.txt - [897]
+classroom
+	file2.txt - [900]
+projection
+	file2.txt - [901]
+lot
+	file2.txt - [907]
+individual
+	file2.txt - [909]
+assistance
+	file2.txt - [910]
+class
+	file2.txt - [912]
+sometimes
+	file2.txt - [917]
+projecting
+	file2.txt - [918]
+board
+	file2.txt - [921]
+everyone
+	file2.txt - [923]
+benefit
+	file2.txt - [925]
+discussion
+	file2.txt - [928]
+issues
+	file2.txt - [929,1001]
+additionally
+	file2.txt - [931]
+building
+	file2.txt - [933]
+better
+	file2.txt - [957]
+programming
+	file2.txt - [961]
+design
+	file2.txt - [967]
+prepare
+	file2.txt - [970]
+extensions
+	file2.txt - [974]
+upcoming
+	file2.txt - [980]
+homeworks
+	file2.txt - [981]
+earlier
+	file2.txt - [992]
+chapters
+	file2.txt - [993]
