@@ -6,26 +6,25 @@ var indexerFactory = require('./indexer.js'),
 /*method to parse the index data object and record the results. */
 var callback = function (data) {
 
+    /*
+    if(data.map) {
+        console.log("Generating Document (ID => Title) Map");
+
+        fs.writeFileSync("./map.txt", JSON.stringify(data.map, null, 4));
+
+        console.log("Map Generated");
+
+    }
+    */
+
     if(data.index) {
 
-        if(data.map) {
-            console.log("Generating Document (ID => Title) Map");
-
-
-
-            fs.writeFile("./map.txt", JSON.stringify(data.map, null, 4), function(err) {
-                if(err) {
-                    return console.log(err);
-                }
-
-                console.log("Map Generated");
-            });
-
-        }
 
         console.log('Generating Index');
 
         for(term in data.index) {
+
+            if(!data.index.hasOwnProperty(term)) { continue; }
 
             /*check if the term is a numeric value if so skip it.
             * temporary for limiting the index file size.
@@ -35,13 +34,21 @@ var callback = function (data) {
 
             var str = term;
 
-
-            var docs = data[term];
+            var docs = data.index[term];
 
             console.log("Indexing Term = '" +term + "'");
 
             for(doc in docs) {
-                str += '\n\t' + doc + " - [" + docs[doc].pos.join(',') + ']';
+                if (docs.hasOwnProperty(doc)) {
+
+                    var pos = docs[doc].pos;
+
+                    if(pos instanceof Array) {
+
+                        str += '\n\t' + doc + " - [" + pos.join(',') + ']';
+                        
+                    }
+                }
 
             }
 

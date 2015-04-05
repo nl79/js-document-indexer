@@ -49,7 +49,7 @@ function create (args) {
                         //current file name.
                         var title = val;
 
-                        var id = (self.idMap.push(title)) -1;
+                        self.idMap[index.toString()] = val;
 
                         var path = self.inputDir + '/' + val;
 
@@ -60,7 +60,7 @@ function create (args) {
                             else {
                                 //build an ojbect with the data and title
                                 var doc = {'title': title,
-                                    'id': id,
+                                    'id': index.toString(),
                                     'data':data};
 
                                 //call the index method.
@@ -109,8 +109,9 @@ function create (args) {
              */
             
             //var title = doc.title || '_untitled_document';
+            var id = doc.id;
             var title = doc.title || '_untitled_document';
-            
+
             console.log("Indexing: " + title); 
             
             /*
@@ -150,19 +151,19 @@ function create (args) {
                          */
                         var record = index[word];
 
-                        if (record.hasOwnProperty(title)) {
+                        if (record.hasOwnProperty(id)) {
 
-                            index[word][title].pos.push(i);
+                            index[word][id].pos.push(i);
 
                             return; 
                             
-                        }  else if( !record.hasOwnProperty(title)){
+                        }  else if( !record.hasOwnProperty(id)){
 
                             var key = index[word];
 
                             delete index[word];
 
-                            key[title] = {pos: [i]};
+                            key[id] = {pos: [i]};
 
 
                             index[word] = key;
@@ -180,7 +181,7 @@ function create (args) {
                      */
                     var pair = {};
 
-                    pair[title] = {pos: [i]};
+                    pair[id] = {pos: [i]};
 
                     index[word] = pair;
 
