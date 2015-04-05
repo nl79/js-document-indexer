@@ -6,12 +6,35 @@ var indexerFactory = require('./indexer.js'),
 /*method to parse the index data object and record the results. */
 var callback = function (data) {
 
-    if(data) {
+    if(data.index) {
+
+        if(data.map) {
+            console.log("Generating Document (ID => Title) Map");
+
+
+
+            fs.writeFile("./map.txt", JSON.stringify(data.map, null, 4), function(err) {
+                if(err) {
+                    return console.log(err);
+                }
+
+                console.log("Map Generated");
+            });
+
+        }
+
         console.log('Generating Index');
 
-        for(term in data) {
+        for(term in data.index) {
+
+            /*check if the term is a numeric value if so skip it.
+            * temporary for limiting the index file size.
+            */
+
+            if(!isNaN(term)) { continue; }
 
             var str = term;
+
 
             var docs = data[term];
 

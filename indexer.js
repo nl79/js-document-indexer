@@ -18,6 +18,9 @@ function create (args) {
         //create an empty index object. 
         //this.index = Object.create(null);
         this.index = {};
+
+        // create a document map to map document IDs to titles.
+        this.idMap = {};
         
         //processed document acount
         this.processed = 0;
@@ -45,6 +48,9 @@ function create (args) {
                         //create the title and path variables and set the title to the
                         //current file name.
                         var title = val;
+
+                        var id = (self.idMap.push(title)) -1;
+
                         var path = self.inputDir + '/' + val;
 
                         //declare a callback function for readfile.
@@ -54,6 +60,7 @@ function create (args) {
                             else {
                                 //build an ojbect with the data and title
                                 var doc = {'title': title,
+                                    'id': id,
                                     'data':data};
 
                                 //call the index method.
@@ -101,6 +108,7 @@ function create (args) {
              *if not, set to a default title.
              */
             
+            //var title = doc.title || '_untitled_document';
             var title = doc.title || '_untitled_document';
             
             console.log("Indexing: " + title); 
@@ -190,7 +198,9 @@ function create (args) {
              *documentCount, emit a 'finish' event.
              */
             if (this.processed >= this.documentCount) {
-                this.emit('finish', this.index); 
+                // return an object with the index and the id map
+                this.emit('finish', {'index':this.index,
+                                    'map': this.idMap});
             }
         }
              
