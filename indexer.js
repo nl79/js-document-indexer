@@ -1,3 +1,4 @@
+"use strict";
 var
     emitter = require('events').EventEmitter,
     util = require("util"), 
@@ -15,60 +16,65 @@ function create (args) {
         this.outputDir = args && args.outputdir || '/_default_output';
         
         //create an empty index object. 
-        this.index = Object.create(null);
+        //this.index = Object.create(null);
+        this.index = {};
+
+        // create a document map to map document IDs to titles.
+        this.idMap = {};
         
         //processed document acount
         this.processed = 0;
         
         //collection count.
-        this.documentCount = 0; 
-        
+        this.documentCount = 0;
+
         this.process = function() {
             var collection = null;
-            
-            var self = this; 
-            
+
+            var self = this;
+
             fs.readdir(this.inputDir, function(err, files) {
                 if (err) { self.emit('error', err); }
                 else {
-                    
+
                     /*
                      *set the files length in the documentCount property.
                      */
-                    self.documentCount = files.length; 
-                    
-                    
+                    self.documentCount = files.length;
+
+
                     files.forEach(function(val,index,arr) {
-                        
+
                         //create the title and path variables and set the title to the
-                        //current file name. 
+                        //current file name.
                         var title = val;
+
+                        self.idMap[index.toString()] = val;
+
                         var path = self.inputDir + '/' + val;
-                        
-                        //declare a callback function for readfile. 
+
+                        //declare a callback function for readfile.
                         var callback = function (err, data) {
-                            
+
                             if (err) { self.emit('error', err); }
                             else {
                                 //build an ojbect with the data and title
                                 var doc = {'title': title,
-                                            'data':data};
-                                            
+                                    'id': index.toString(),
+                                    'data':data};
+
                                 //call the index method.
                                 self.buildIndex(doc);
-                                
+
                             }
-                        }; 
-                        
-                        // Read the file data. 
+                        };
+
+                        // Read the file data.
                         fs.readFile(path, 'utf8', callback);
 
-                    
-                    }); 
-                    
+                    });
                 }
             });
-               
         }
         
         /*
@@ -102,8 +108,10 @@ function create (args) {
              *if not, set to a default title.
              */
             
+            //var title = doc.title || '_untitled_document';
+            var id = doc.id;
             var title = doc.title || '_untitled_document';
-            
+
             console.log("Indexing: " + title); 
             
             /*
@@ -113,12 +121,14 @@ function create (args) {
              */
             
             var parts = Indexer.prototype.stripMarkup(doc.data).replace(/\W/g, ' ').split(/\s+/); 
-            var self = this; 
+            //var self = this;
+
+            var index = this.index;
             
             /*
              *loop over the array and validate each word.
              */
-            parts.forEach(function(val, index, arr) {
+            parts.forEach(function(val, i, arr) {
                 
                 //clean the value by trimming off the empty spaces. 
                 var word = val.trim().toLowerCase();
@@ -133,19 +143,35 @@ function create (args) {
                     /*
                      *check if the word exists in the index.
                      */ 
-                    if (self.index[word]) {
-                        
+                    if (index.hasOwnProperty(word)) {
+
                         /*
                          *check if the current document title is in the index.
                          *if so, push the index into the pos array. 
                          */
-                        if (self.index[word][title]) {
-                            
-                            self.index[word][title].pos.push(index);
+                        var record = index[word];
+
+                        if (record.hasOwnProperty(id)) {
+
+                            index[word][id].pos.push(i);
 
                             return; 
                             
-                        }  
+                        }  else if( !record.hasOwnProperty(id)){
+
+                            var key = index[word];
+
+                            delete index[word];
+
+                            key[id] = {pos: [i]};
+
+
+                            index[word] = key;
+
+                            //index[word][title] = {pos: [i]};
+
+                            return;
+                        }
                     }
                     
                     /*
@@ -155,15 +181,15 @@ function create (args) {
                      */
                     var pair = {};
 
-                    pair[title] = {pos: new Array(index)};
+                    pair[id] = {pos: [i]};
 
-                    self.index[word] = pair;
+                    index[word] = pair;
+
+                    return;
 
                 }
                     
             });
-            
-            
             //increment the processed count
             this.processed += 1; 
             
@@ -173,7 +199,9 @@ function create (args) {
              *documentCount, emit a 'finish' event.
              */
             if (this.processed >= this.documentCount) {
-                this.emit('finish', this.index); 
+                // return an object with the index and the id map
+                this.emit('finish', {'index':this.index,
+                                    'map': this.idMap});
             }
         }
              
