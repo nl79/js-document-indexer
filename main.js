@@ -3,12 +3,12 @@ var indexerFactory = require('./indexer.js'),
     args = {'inputDir': './cache',
                 'outputDir': './index',
     'minLength': 2,
+        'maxLength': 20,
     'stopWords': ['a', 'an', 'of', 'and', 'the', 'as', 'be', 'at','by','in']};
 
 /*method to parse the index data object and record the results. */
 var callback = function (data) {
-
-
+    /*
     if(data.docMap) {
         console.log("Generating Document (ID => Title) Map");
 
@@ -16,11 +16,11 @@ var callback = function (data) {
 
         console.log("Document Map Generated");
     }
-
+*/
     if(data.wordMap) {
         console.log("Generating Word (ID => Word) Map");
 
-        fs.writeFileSync("./wordMap.txt", JSON.stringify(data.docMap, null, 4));
+        fs.writeFileSync("./wordMap.txt", JSON.stringify(data.wordMap, null, 4));
 
         console.log("Word Map Generated");
     }
@@ -35,9 +35,9 @@ var callback = function (data) {
 
             if(!data.index.hasOwnProperty(term)) { continue; }
 
-            /*check if the term is a numeric value if so skip it.
-            * temporary for limiting the index file size.
-            */
+            //check if the term is a numeric value if so skip it.
+            //temporary for limiting the index file size.
+
 
             if(!isNaN(term)) { continue; }
 

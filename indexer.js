@@ -30,6 +30,8 @@ function create (args) {
         // minimum lenth a word has to be.
         this.minLength = args.minLength || 2;
 
+        this.maxLength = args.maxLength || 30;
+
         this.stopWords = args.stopWords || [];
         
         //processed document acount
@@ -150,9 +152,10 @@ function create (args) {
                  *check that the word is valid and that it does not
                  *contain any special characters.
                  */
-                if(word.length > self.minLength &&
-                    Indexer.prototype.termValid(word)
-                && self.stopWords.indexOf(word) == -1) {
+                if(word.length > self.minLength && word.length <= self.maxLength
+                    && Indexer.prototype.termValid(word)
+                && self.stopWords.indexOf(word) == -1
+                    && isNaN(word)) {
 
                     /*
                      *check if the word exists in the index.
@@ -214,7 +217,7 @@ function create (args) {
                         self.wordMap[word] = {id:self.wordCount,
                             count: 1};
                     }
-                    
+
                     return;
 
                 }
@@ -256,6 +259,17 @@ function create (args) {
     *@method isValid - determines if a word contains any special characters.
     */ 
     Indexer.prototype.termValid = function(str){
+
+
+            // ______________TEMP FIX______________________________
+            //check if the word starts with wg if so, return false/
+            //wikipedia uses placeholder words that start with 'wg',
+            if(str.length > 2 && str.charAt(0) == 'w' && str.charAt(1) == 'g') {
+
+                return false;
+            }
+            //-----------------------------------------------------
+
             return !/[~`!#$%\^&*+=\-\[\]\\';,/{}|\\":<>\?]/g.test(str);
     };
     
