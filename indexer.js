@@ -20,7 +20,19 @@ function create (args) {
         this.index = {};
 
         // create a document map to map document IDs to titles.
-        this.idMap = {};
+        this.docMap = {};
+
+        // create a word map to assign a numeric id to each term.
+        this.wordMap = {};
+
+        this.wordCount = 0;
+
+        // minimum lenth a word has to be.
+        this.minLength = args.minLength || 2;
+
+        this.maxLength = args.maxLength || 30;
+
+        this.stopWords = args.stopWords || [];
         
         //processed document acount
         this.processed = 0;
@@ -49,7 +61,7 @@ function create (args) {
                         //current file name.
                         var title = val;
 
-                        self.idMap[index.toString()] = val;
+                        self.docMap[index.toString()] = val;
 
                         var path = self.inputDir + '/' + val;
 
@@ -128,6 +140,9 @@ function create (args) {
             /*
              *loop over the array and validate each word.
              */
+
+            var self = this;
+
             parts.forEach(function(val, i, arr) {
                 
                 //clean the value by trimming off the empty spaces. 
@@ -137,9 +152,11 @@ function create (args) {
                  *check that the word is valid and that it does not
                  *contain any special characters.
                  */
-                if(Indexer.prototype.termValid(word)) {
-                    
-                    
+                if(word.length > self.minLength && word.length <= self.maxLength
+                    && Indexer.prototype.termValid(word)
+                && self.stopWords.indexOf(word) == -1
+                    && isNaN(word)) {
+
                     /*
                      *check if the word exists in the index.
                      */ 
@@ -170,6 +187,9 @@ function create (args) {
 
                             //index[word][title] = {pos: [i]};
 
+                            //increment the word count in the map by 1.
+                            self.wordMap[word].count ++;
+
                             return;
                         }
                     }
@@ -184,6 +204,19 @@ function create (args) {
                     pair[id] = {pos: [i]};
 
                     index[word] = pair;
+
+
+                    //check if the wordMap contains the current term.
+                    if(!self.wordMap.hasOwnProperty(word)) {
+                        //if not, create an object with the current term and a unique numeric id. \
+                        //increment the wordCount.
+                        self.wordCount ++;
+
+                        //create an object that stores the document ID along with an occurance count
+                        //for the current term.
+                        self.wordMap[word] = {id:self.wordCount,
+                            count: 1};
+                    }
 
                     return;
 
@@ -201,7 +234,8 @@ function create (args) {
             if (this.processed >= this.documentCount) {
                 // return an object with the index and the id map
                 this.emit('finish', {'index':this.index,
-                                    'map': this.idMap});
+                                    'docMap': this.docMap,
+                                    'wordMap': this.wordMap});
             }
         }
              
@@ -225,6 +259,17 @@ function create (args) {
     *@method isValid - determines if a word contains any special characters.
     */ 
     Indexer.prototype.termValid = function(str){
+
+
+            // ______________TEMP FIX______________________________
+            //check if the word starts with wg if so, return false/
+            //wikipedia uses placeholder words that start with 'wg',
+            if(str.length > 2 && str.charAt(0) == 'w' && str.charAt(1) == 'g') {
+
+                return false;
+            }
+            //-----------------------------------------------------
+
             return !/[~`!#$%\^&*+=\-\[\]\\';,/{}|\\":<>\?]/g.test(str);
     };
     
