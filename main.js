@@ -16,7 +16,8 @@ var callback = function (data) {
 
         console.log("Document Map Generated");
     }
-*/
+
+
     if(data.wordMap) {
         console.log("Generating Word (ID => Word) Map");
 
@@ -66,6 +67,18 @@ var callback = function (data) {
             fs.appendFileSync('./index.txt', str);
 
         }
+
+        console.log("Index Generated");
+    }
+
+     */
+
+    if(data.index) {
+
+
+        console.log('Generating Index');
+
+        fs.writeFileSync("./indexObj.json", JSON.stringify(data.index));
 
         console.log("Index Generated");
     }
