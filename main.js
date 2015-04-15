@@ -46,7 +46,7 @@ var callback = function (data) {
                     if(pos instanceof Array) {
 
                         str += '\n\t' + doc + " - [" + pos.join(',') + ']';
-                        
+
                     }
                 }
 
